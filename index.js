@@ -25,10 +25,7 @@ app.get("/", async (req, res) => {
 
 
 app.use('/api/auth', require('./routes/auth'))
-app.use('/api/assessment', require('./routes/assessment'))
-// app.use('/api/project', require('./routes/project'))
-// app.use('/api/image', require('./routes/image'))
-
+app.use('/api/notes', require('./routes/notes'))
 
 
 app.listen(port, async () => {
